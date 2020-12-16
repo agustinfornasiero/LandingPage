@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+    <html lang = "en">
+        <head>
+            <meta charset ="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--Import CSS-->
+            <link rel="stylesheet" href="css/styles.css">
+
+            <!--Media Query goes here, and not in the CSS file, because of the problem with the FreeCodeCamp's Script-->
+            <!--FreeCodeCamp script has a bug that not consider my media queries in css file, the same happens with the logo image-->
+            <!--not consider the src of my image folder, just keep correct the url image-->
+            <style>
+
+                header nav {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: row-reverse;
+                }
+
+                @media (max-width: 860px) {
+                    header {
+                        display: block;
+                    }
+                }
+            </style>
+
+            <!--Import Icons-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <title>Product Landing Page</title>
+        </head>
+
+        <body>
+            
+        <header id = "header">
+            <img src = "https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt = "original_trombones logo" id = "header-img">
+
+            <nav id = "nav-bar">
+                <a href = "#features" class = "nav-link">Features</a>
+                <a href = "#video" class = "nav-link">How it Works</a>
+                <a href = "#pricing" class = "nav-link">Pricing</a>
+            </nav>
+
+        </header>
+
+        
+
+        <form action = "https://www.freecodecamp.com/email-submit)" id = "form">
+            <h1>Handcrafted, home-made masterpieces</h1>
+            <input type = "email" name = "email" id = "email" placeholder = "Enter your email">
+
+            <input type = "submit" value = "GET STARTED" id = "submit">
+
+        </form>
+
+        <div id = "features">
+            <div class = "content">
+                <div class = "icon">
+                    <i class="fa fa-fire" aria-hidden="true"></i>
+
+                </div>
+                <div class = "desc">
+                    <h1>Premium Materials</h1>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase. </p>
+                </div>
+            </div>
+
+            <div class = "content">
+                <div class = "icon">
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+
+                    
+                </div>
+                <div class = "desc">
+                    <h1>Fast Shipping</h1>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied. </p>
+                </div>
+            </div>
+
+            <div class = "content">
+                <div class = "icon">
+                    <i class="fa fa-battery-full" aria-hidden="true"></i>
+
+                </div>
+                <div class = "desc">
+                    <h1>Quality Assurance</h1>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument. </p>
+                </div>
+            </div>
+
+        </div>
+
+        <iframe id = "video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <div id = "pricing">
+            <div class = "box">
+                <h1>Tenor Trombone</h1>
+                <div class = "content">
+                    <h2>$600</h2>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button>SELECT</button>
+                </div>
+            </div>
+
+            <div class = "box">
+                <h1>Bass Trombone</h1>
+                <div class = "content">
+                    <h2>$900</h2>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button>SELECT</button>
+                </div>
+            </div>
+
+            <div class = "box">
+                <h1>Valve Trombone</h1>
+                <div class = "content">
+                    <h2>$1200</h2>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button>SELECT</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div id = "footer">
+                <div class = "links">
+                    <a href = "">Privacy</a>
+                    <a href = "">Terms</a>
+                    <a href = "">Contact</a>
+                </div>
+                <p>Copyright 2016, Original Trombones</p>
+            </div>
+        </footer>
+
+        </body>
+
+        <!--Import FreeCodeCamp Script from the Curriculum of Responsive Web Design-->
+        <script src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </html>
+
+    
